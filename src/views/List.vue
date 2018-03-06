@@ -2,7 +2,7 @@
   <div class="list">
     <h1>List</h1>
     <ul>
-      <item v-for="item in getItems" :item="item"></item>
+      <item v-for="item in getItems" :item="item" :key="item.id"></item>
     </ul>
     <div>
       <input type="text" v-model="inputTitle">
